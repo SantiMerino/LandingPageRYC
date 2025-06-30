@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - R&CNetworks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-2xl font-bold text-blue-600">R&CNetworks</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                    <a href="servicios.html"
+                        class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+                    <a href="nosotros.html"
+                        class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Nosotros</a>
+                    <a href="contacto.html"
+                        class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+                    <a href="blog.html"
+                        class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-gray-500 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+                <a href="servicios.html"
+                    class="text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+                <a href="nosotros.html"
+                    class="text-gray-500 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Nosotros</a>
+                <a href="contacto.html"
+                    class="text-gray-500 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+                <a href="blog.html"
+                    class="text-gray-500 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Nuestros <span class="text-yellow-400">Servicios</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                    Soluciones digitales integrales para hacer crecer tu negocio en el mundo digital
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Desarrollo Web -->
+                <div class="card hover-scale">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Desarrollo Web</h3>
+                    <p class="text-gray-600 mb-6">
+                        Creamos sitios web modernos, responsivos y optimizados para SEO que convierten visitantes en
+                        clientes.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Sitios web corporativos</li>
+                        <li>• E-commerce</li>
+                        <li>• Aplicaciones web</li>
+                        <li>• Landing pages</li>
+                    </ul>
+                    <a href="contacto.html" class="btn-primary inline-block">Solicitar Cotización</a>
+                </div>
+
+                <!-- Aplicaciones Móviles -->
+                <div class="card hover-scale">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Aplicaciones Móviles</h3>
+                    <p class="text-gray-600 mb-6">
+                        Desarrollamos aplicaciones nativas e híbridas para iOS y Android con las mejores prácticas de
+                        UX/UI.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Apps nativas iOS/Android</li>
+                        <li>• Apps híbridas</li>
+                        <li>• Progressive Web Apps</li>
+                        <li>• Mantenimiento y actualizaciones</li>
+                    </ul>
+                    <a href="contacto.html" class="btn-primary inline-block">Solicitar Cotización</a>
+                </div>
+
+                <!-- Consultoría IT -->
+                <div class="card hover-scale">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Consultoría IT</h3>
+                    <p class="text-gray-600 mb-6">
+                        Asesoramos a tu empresa en la transformación digital y optimización de procesos tecnológicos.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Arquitectura de software</li>
+                        <li>• Optimización de procesos</li>
+                        <li>• Migración a la nube</li>
+                        <li>• Auditorías de seguridad</li>
+                    </ul>
+                    <a href="contacto.html" class="btn-primary inline-block">Solicitar Cotización</a>
+                </div>
+
+                <!-- Marketing Digital -->
+                <div class="card hover-scale">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Marketing Digital</h3>
+                    <p class="text-gray-600 mb-6">
+                        Estrategias de marketing digital para aumentar la visibilidad y conversiones de tu negocio.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• SEO y SEM</li>
+                        <li>• Redes sociales</li>
+                        <li>• Email marketing</li>
+                        <li>• Análisis de datos</li>
+                    </ul>
+                    <a href="contacto.html" class="btn-primary inline-block">Solicitar Cotización</a>
+                </div>
+
+                <!-- Mantenimiento -->
+                <div class="card hover-scale">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Mantenimiento</h3>
+                    <p class="text-gray-600 mb-6">
+                        Servicios de mantenimiento continuo para mantener tus sistemas funcionando de manera óptima.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Monitoreo 24/7</li>
+                        <li>• Actualizaciones de seguridad</li>
+                        <li>• Backups automáticos</li>
+                        <li>• Soporte técnico</li>
+                    </ul>
+                    <a href="contacto.html" class="btn-primary inline-block">Solicitar Cotización</a>
+                </div>
+
+                <!-- Hosting -->
+                <div class="card hover-scale">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Hosting</h3>
+                    <p class="text-gray-600 mb-6">
+                        Servicios de hosting confiables y escalables para tu sitio web o aplicación.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li>• Hosting compartido</li>
+                        <li>• VPS dedicados</li>
+                        <li>• Cloud hosting</li>
+                        <li>• Certificados SSL</li>
+                    </ul>
+                    <a href="contacto.html" class="btn-primary inline-block">Solicitar Cotización</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Nuestro Proceso
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Metodología probada para entregar proyectos exitosos
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div
+                        class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        1</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Análisis</h3>
+                    <p class="text-gray-600">Entendemos tus necesidades y objetivos para crear la mejor estrategia.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        2</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Diseño</h3>
+                    <p class="text-gray-600">Creamos prototipos y diseños que reflejan tu visión y objetivos.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        3</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Desarrollo</h3>
+                    <p class="text-gray-600">Construimos tu proyecto con las mejores tecnologías y prácticas.</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                        4</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Entrega</h3>
+                    <p class="text-gray-600">Lanzamos tu proyecto y proporcionamos soporte continuo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                ¿Listo para comenzar?
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Contáctanos para discutir tu proyecto y obtener una cotización personalizada
+            </p>
+            <a href="contacto.html"
+                class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                Solicitar Cotización Gratuita
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">R&CNetworks</h3>
+                    <p class="text-gray-400">
+                        Soluciones digitales innovadoras para empresas que buscan crecer en el mundo digital.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="servicios.html" class="hover:text-white">Desarrollo Web</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Aplicaciones Móviles</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Consultoría IT</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Marketing Digital</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="nosotros.html" class="hover:text-white">Sobre Nosotros</a></li>
+                        <li><a href="blog.html" class="hover:text-white">Blog</a></li>
+                        <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
+                        <li><a href="#" class="hover:text-white">Trabaja con Nosotros</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>info@R&Cnetworks.com</p>
+                        <p>+1 (555) 123-4567</p>
+                        <p>Ciudad, País</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span class="footer-year">2024</span> R&CNetworks. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

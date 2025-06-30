@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones - R&CNetworks</title>
+    <link href="../styles/main.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-xl font-bold text-blue-600">R&CNetworks</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600">Inicio</a>
+                    <a href="../telecomunicaciones.html"
+                        class="text-gray-700 hover:text-blue-600">Telecomunicaciones</a>
+                    <a href="soluciones.html" class="text-blue-600 font-semibold">Soluciones</a>
+                    <a href="../about.html" class="text-gray-700 hover:text-blue-600">Acerca de</a>
+                    <a href="../contact.html" class="text-gray-700 hover:text-blue-600">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-indigo-700">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Soluciones de Networking y Seguridad</h1>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Diseñamos e implementamos soluciones tecnológicas avanzadas que transforman
+                la forma en que su empresa se conecta y protege su información.
+            </p>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <section class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center space-x-8 py-4">
+                <a href="#networking" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-2">Networking</a>
+                <a href="#seguridad" class="text-gray-600 hover:text-blue-600 pb-2">Seguridad</a>
+                <a href="#casos-uso" class="text-gray-600 hover:text-blue-600 pb-2">Casos de Uso</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Networking Section -->
+    <section id="networking" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Soluciones de Networking</h2>
+                <p class="text-xl text-gray-600">Infraestructura de red robusta y escalable para su empresa</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">¿Por qué elegir nuestras soluciones de
+                        networking?</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Arquitectura Escalable</h4>
+                                <p class="text-gray-600">Diseño que crece con su empresa sin limitaciones</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Alto Rendimiento</h4>
+                                <p class="text-gray-600">Optimización para máxima velocidad y eficiencia</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Gestión Centralizada</h4>
+                                <p class="text-gray-600">Control total de su infraestructura desde una plataforma</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Tecnologías que Implementamos</h4>
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Switches de Capa 2 y 3
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Routers Empresariales
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Access Points WiFi 6
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Controladores WiFi
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Sistemas de Monitoreo
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tipos de Redes -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">Redes LAN</h4>
+                    <p class="text-gray-600 mb-4">Conectividad interna de alta velocidad para su empresa</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Cableado estructurado</li>
+                        <li>• Switches gestionados</li>
+                        <li>• Segmentación VLAN</li>
+                        <li>• QoS y priorización</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">Redes WLAN</h4>
+                    <p class="text-gray-600 mb-4">Cobertura WiFi completa y segura</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Access Points profesionales</li>
+                        <li>• Controladores centralizados</li>
+                        <li>• Gestión de usuarios</li>
+                        <li>• Análisis de tráfico</li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-3">Redes WAN</h4>
+                    <p class="text-gray-600 mb-4">Conectividad entre sucursales y sedes</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Enlaces dedicados</li>
+                        <li>• VPN site-to-site</li>
+                        <li>• Balanceo de carga</li>
+                        <li>• Redundancia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seguridad Section -->
+    <section id="seguridad" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Soluciones de Seguridad</h2>
+                <p class="text-xl text-gray-600">Protección integral de su infraestructura tecnológica</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Capas de Seguridad</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-red-500 pl-4">
+                            <h4 class="font-semibold text-gray-800">Seguridad Perimetral</h4>
+                            <p class="text-gray-600">Firewalls de nueva generación y sistemas de detección de
+                                intrusiones</p>
+                        </div>
+                        <div class="border-l-4 border-orange-500 pl-4">
+                            <h4 class="font-semibold text-gray-800">Seguridad de Red</h4>
+                            <p class="text-gray-600">Segmentación, control de acceso y monitoreo de tráfico</p>
+                        </div>
+                        <div class="border-l-4 border-yellow-500 pl-4">
+                            <h4 class="font-semibold text-gray-800">Seguridad de Endpoints</h4>
+                            <p class="text-gray-600">Protección de dispositivos y control de aplicaciones</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="font-semibold text-gray-800">Seguridad de Datos</h4>
+                            <p class="text-gray-600">Cifrado, backup seguro y gestión de identidades</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Servicios de Seguridad</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Firewalls UTM</h4>
+                                <p class="text-gray-600">Protección unificada contra amenazas avanzadas</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">VPN Empresarial</h4>
+                                <p class="text-gray-600">Acceso remoto seguro para su equipo</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Monitoreo 24/7</h4>
+                                <p class="text-gray-600">Detección y respuesta a incidentes en tiempo real</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-500 mr-3 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Auditorías de Seguridad</h4>
+                                <p class="text-gray-600">Evaluación periódica de vulnerabilidades</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Casos de Uso Section -->
+    <section id="casos-uso" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Casos de Uso y Ejemplos</h2>
+                <p class="text-xl text-gray-600">Soluciones reales para empresas como la suya</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Empresa de Servicios Financieros</h3>
+                    <p class="text-gray-600 mb-4">Implementamos una red segura y redundante para una empresa financiera
+                        con múltiples sucursales.</p>
+                    <div class="bg-white p-4 rounded border-l-4 border-blue-500">
+                        <h4 class="font-semibold text-gray-800 mb-2">Solución Implementada:</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Red MPLS entre sucursales</li>
+                            <li>• Firewalls de alta disponibilidad</li>
+                            <li>• VPN para acceso remoto</li>
+                            <li>• Monitoreo 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Centro Educativo</h3>
+                    <p class="text-gray-600 mb-4">Desarrollamos una infraestructura WiFi robusta para un centro
+                        educativo con más de 1000 estudiantes.</p>
+                    <div class="bg-white p-4 rounded border-l-4 border-green-500">
+                        <h4 class="font-semibold text-gray-800 mb-2">Solución Implementada:</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• WiFi 6 campus-wide</li>
+                            <li>• Control de acceso por roles</li>
+                            <li>• Filtrado de contenido</li>
+                            <li>• Análisis de uso</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Empresa de Manufactura</h3>
+                    <p class="text-gray-600 mb-4">Creamos una red industrial segura para una empresa de manufactura con
+                        IoT y automatización.</p>
+                    <div class="bg-white p-4 rounded border-l-4 border-purple-500">
+                        <h4 class="font-semibold text-gray-800 mb-2">Solución Implementada:</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Redes separadas para OT/IT</li>
+                            <li>• Switches industriales</li>
+                            <li>• Seguridad de IoT</li>
+                            <li>• Backup redundante</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Startup Tecnológica</h3>
+                    <p class="text-gray-600 mb-4">Implementamos una infraestructura cloud-ready para una startup en
+                        crecimiento rápido.</p>
+                    <div class="bg-white p-4 rounded border-l-4 border-orange-500">
+                        <h4 class="font-semibold text-gray-800 mb-2">Solución Implementada:</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Red escalable</li>
+                            <li>• Seguridad Zero Trust</li>
+                            <li>• Integración cloud</li>
+                            <li>• Gestión remota</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">¿Listo para transformar su infraestructura?</h2>
+            <p class="text-xl text-blue-100 mb-8">Contáctenos para diseñar la solución perfecta para su empresa</p>
+            <div class="space-x-4">
+                <a href="contact.html"
+                    class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Solicitar Consulta
+                </a>
+                <a href="tel:+50312345678"
+                    class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                    Llamar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">R&CNetworks</h3>
+                    <p class="text-gray-400">Soluciones integrales de telecomunicaciones para conectar el futuro digital
+                        de su empresa.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Telecomunicaciones</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="telecomunicaciones.html#instalacion" class="hover:text-white">Instalación</a></li>
+                        <li><a href="telecomunicaciones.html#soporte" class="hover:text-white">Soporte Técnico</a></li>
+                        <li><a href="telecomunicaciones.html#servicios" class="hover:text-white">Servicios</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Soluciones</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#networking" class="hover:text-white">Networking</a></li>
+                        <li><a href="#seguridad" class="hover:text-white">Seguridad</a></li>
+                        <li><a href="#casos-uso" class="hover:text-white">Casos de Uso</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: info@R&Cnetworks.com</li>
+                        <li>Teléfono: +503 1234-5678</li>
+                        <li>San Salvador, El Salvador</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 R&CNetworks. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

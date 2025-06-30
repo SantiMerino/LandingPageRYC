@@ -1,0 +1,23 @@
+{
+  "name": "R&Cnetworks",
+  "version": "1.0.0",
+  "description": "Landing page con HTML, JS, TailwindCSS y PHP",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["landing-page", "tailwindcss", "vite", "php"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.0"
+  }
+}

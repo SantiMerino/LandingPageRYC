@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - R&CNetworks</title>
+    <link href="../styles/main.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navbar Component Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-indigo-700">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Contáctenos</h1>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Estamos aquí para ayudarle a conectar su empresa con el futuro digital.
+                Contáctenos hoy mismo para una consulta gratuita.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Envíenos un Mensaje</h2>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">Nombre
+                                    *</label>
+                                <input type="text" id="nombre" name="nombre" required class="form-input"
+                                    placeholder="Su nombre completo">
+                            </div>
+                            <div>
+                                <label for="empresa"
+                                    class="block text-sm font-medium text-gray-700 mb-2">Empresa</label>
+                                <input type="text" id="empresa" name="empresa" class="form-input"
+                                    placeholder="Nombre de su empresa">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                                <input type="email" id="email" name="email" required class="form-input"
+                                    placeholder="su@email.com">
+                            </div>
+                            <div>
+                                <label for="telefono"
+                                    class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-input"
+                                    placeholder="+503 1234-5678">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="servicio" class="block text-sm font-medium text-gray-700 mb-2">Servicio de
+                                Interés</label>
+                            <select id="servicio" name="servicio" class="form-input">
+                                <option value="">Seleccione un servicio</option>
+                                <option value="instalacion">Instalación de Infraestructura</option>
+                                <option value="soporte">Soporte Técnico</option>
+                                <option value="networking">Soluciones de Networking</option>
+                                <option value="seguridad">Seguridad de Red</option>
+                                <option value="consultoria">Consultoría</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-2">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required class="form-textarea"
+                                placeholder="Cuéntenos sobre su proyecto o necesidades..."></textarea>
+                        </div>
+
+                        <div class="flex items-start">
+                            <input type="checkbox" id="privacy" name="privacy" required
+                                class="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                            <label for="privacy" class="ml-2 block text-sm text-gray-700">
+                                Acepto la <a href="#" class="text-blue-600 hover:text-blue-800">política de
+                                    privacidad</a> y
+                                autorizo el tratamiento de mis datos personales.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-full">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Información de Contacto</h2>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2">Dirección</h3>
+                                <p class="text-gray-600">Av. Principal #123, Colonia Centro<br>San Salvador, El Salvador
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2">Teléfono</h3>
+                                <p class="text-gray-600">
+                                    <a href="tel:+50312345678" class="hover:text-blue-600">+503 1234-5678</a><br>
+                                    <a href="tel:+50312345679" class="hover:text-blue-600">+503 1234-5679</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2">Email</h3>
+                                <p class="text-gray-600">
+                                    <a href="mailto:info@R&Cnetworks.com"
+                                        class="hover:text-blue-600">info@R&Cnetworks.com</a><br>
+                                    <a href="mailto:soporte@R&Cnetworks.com"
+                                        class="hover:text-blue-600">soporte@R&Cnetworks.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2">Horario de Atención</h3>
+                                <p class="text-gray-600">
+                                    Lunes - Viernes: 8:00 AM - 6:00 PM<br>
+                                    Sábado: 9:00 AM - 1:00 PM<br>
+                                    <span class="text-blue-600 font-semibold">Soporte 24/7 para clientes</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="mt-12">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Preguntas Frecuentes</h3>
+                        <div class="space-y-4">
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <h4 class="font-semibold text-gray-800 mb-2">¿Cuánto tiempo toma la instalación?</h4>
+                                <p class="text-gray-600">El tiempo de instalación varía según el proyecto, pero
+                                    típicamente toma entre 1-3 días para instalaciones estándar.</p>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <h4 class="font-semibold text-gray-800 mb-2">¿Ofrecen soporte técnico 24/7?</h4>
+                                <p class="text-gray-600">Sí, ofrecemos soporte técnico 24/7 para todos nuestros
+                                    clientes con contratos de mantenimiento.</p>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-4">
+                                <h4 class="font-semibold text-gray-800 mb-2">¿Trabajan con empresas pequeñas?</h4>
+                                <p class="text-gray-600">Absolutamente. Ofrecemos soluciones escalables para empresas
+                                    de todos los tamaños, desde startups hasta grandes corporaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nuestra Ubicación</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg flex items-center justify-center">
+                    <div class="text-center">
+                        <svg class="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <p class="text-gray-600">Mapa interactivo aquí</p>
+                        <p class="text-sm text-gray-500 mt-2">Av. Principal #123, Colonia Centro<br>San Salvador, El
+                            Salvador</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component Container -->
+    <div id="footer-container"></div>
+
+    <!-- Load component system first -->
+    <script src="../js/components.js"></script>
+    <!-- Then load any page-specific scripts -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - R&CNetworks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-2xl font-bold text-blue-600">R&CNetworks</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                    <a href="servicios.html"
+                        class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+                    <a href="nosotros.html"
+                        class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Nosotros</a>
+                    <a href="contacto.html"
+                        class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+                    <a href="blog.html"
+                        class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-500 hover:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-gray-500 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
+                <a href="servicios.html"
+                    class="text-gray-500 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Servicios</a>
+                <a href="nosotros.html"
+                    class="text-gray-500 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Nosotros</a>
+                <a href="contacto.html"
+                    class="text-gray-500 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+                <a href="blog.html" class="text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Blog
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                    Insights, tendencias y mejores prácticas en tecnología y desarrollo digital
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Featured Post -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Artículo Destacado</h2>
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <span
+                                    class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Tecnología</span>
+                                <span class="text-gray-500 ml-4">15 de Enero, 2024</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                Las Tendencias de Desarrollo Web para 2024
+                            </h3>
+                            <p class="text-gray-600 mb-6">
+                                Descubre las tecnologías y metodologías que dominarán el desarrollo web este año, desde
+                                Progressive Web Apps hasta la inteligencia artificial en el frontend.
+                            </p>
+                            <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">
+                                Leer más →
+                            </a>
+                        </div>
+                        <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                            <svg class="w-16 h-16 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Post 1 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span
+                                class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">Marketing</span>
+                            <span class="text-gray-500 text-sm ml-3">10 de Enero, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            Estrategias de SEO para 2024
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Las mejores prácticas de SEO que debes implementar este año para mejorar el posicionamiento
+                            de tu sitio web.
+                        </p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">
+                            Leer más →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span
+                                class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-semibold">Móvil</span>
+                            <span class="text-gray-500 text-sm ml-3">8 de Enero, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            Desarrollo de Apps Nativas vs Híbridas
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Comparativa detallada entre aplicaciones nativas e híbridas: ventajas, desventajas y cuándo
+                            usar cada una.
+                        </p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">
+                            Leer más →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span
+                                class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-semibold">Seguridad</span>
+                            <span class="text-gray-500 text-sm ml-3">5 de Enero, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            Mejores Prácticas de Seguridad Web
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Guía completa para proteger tu aplicación web contra las amenazas más comunes en 2024.
+                        </p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">
+                            Leer más →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span
+                                class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-semibold">Performance</span>
+                            <span class="text-gray-500 text-sm ml-3">3 de Enero, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            Optimización de Rendimiento Web
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Técnicas avanzadas para mejorar la velocidad de carga y el rendimiento de tu sitio web.
+                        </p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">
+                            Leer más →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span
+                                class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-semibold">UX/UI</span>
+                            <span class="text-gray-500 text-sm ml-3">1 de Enero, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            Diseño Centrado en el Usuario
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Principios fundamentales del UX/UI design para crear experiencias digitales excepcionales.
+                        </p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">
+                            Leer más →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full text-xs font-semibold">Cloud</span>
+                            <span class="text-gray-500 text-sm ml-3">30 de Diciembre, 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">
+                            Migración a la Nube: Guía Completa
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Todo lo que necesitas saber para migrar tu infraestructura a la nube de manera segura y
+                            eficiente.
+                        </p>
+                        <a href="#" class="text-blue-600 font-semibold hover:text-blue-700">
+                            Leer más →
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-16 flex justify-center">
+                <nav class="flex items-center space-x-2">
+                    <a href="#" class="px-3 py-2 text-gray-500 hover:text-blue-600">← Anterior</a>
+                    <a href="#" class="px-3 py-2 bg-blue-600 text-white rounded-lg">1</a>
+                    <a href="#" class="px-3 py-2 text-gray-500 hover:text-blue-600">2</a>
+                    <a href="#" class="px-3 py-2 text-gray-500 hover:text-blue-600">3</a>
+                    <a href="#" class="px-3 py-2 text-gray-500 hover:text-blue-600">Siguiente →</a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Suscríbete a nuestro newsletter
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Recibe las últimas noticias, tendencias y consejos de tecnología directamente en tu email
+            </p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Tu email"
+                    class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <button type="submit"
+                    class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                    Suscribirse
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">R&CNetworks</h3>
+                    <p class="text-gray-400">
+                        Soluciones digitales innovadoras para empresas que buscan crecer en el mundo digital.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="servicios.html" class="hover:text-white">Desarrollo Web</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Aplicaciones Móviles</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Consultoría IT</a></li>
+                        <li><a href="servicios.html" class="hover:text-white">Marketing Digital</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="nosotros.html" class="hover:text-white">Sobre Nosotros</a></li>
+                        <li><a href="blog.html" class="hover:text-white">Blog</a></li>
+                        <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
+                        <li><a href="#" class="hover:text-white">Trabaja con Nosotros</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>info@R&Cnetworks.com</p>
+                        <p>+1 (555) 123-4567</p>
+                        <p>Ciudad, País</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; <span class="footer-year">2024</span> R&CNetworks. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
