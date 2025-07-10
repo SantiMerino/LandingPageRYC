@@ -9,164 +9,8 @@
 </head>
 
 <body class="bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-xl font-bold text-blue-600">R&CNetworks</a>
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600">Inicio</a>
-
-                    <!-- Dropdown Telecomunicaciones -->
-                    <div class="relative dropdown">
-                        <button class="text-gray-700 hover:text-blue-600 flex items-center" aria-expanded="false"
-                            aria-haspopup="true" aria-controls="telecom-dropdown">
-                            Telecomunicaciones
-                            <svg class="w-4 h-4 ml-1 transition-transform duration-200" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div id="telecom-dropdown"
-                            class="dropdown-content absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-2 z-10"
-                            role="menu">
-                            <a href="pages/telecomunicaciones.html#instalacion"
-                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 flex items-center"
-                                role="menuitem">
-                                <svg class="w-4 h-4 mr-3 text-blue-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
-                                    </path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium">Instalación</div>
-                                    <div class="text-xs text-gray-500">Infraestructura de telecomunicaciones</div>
-                                </div>
-                            </a>
-                            <a href="pages/telecomunicaciones.html#soporte"
-                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 flex items-center"
-                                role="menuitem">
-                                <svg class="w-4 h-4 mr-3 text-green-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z">
-                                    </path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium">Soporte Técnico</div>
-                                    <div class="text-xs text-gray-500">Soporte 24/7 especializado</div>
-                                </div>
-                            </a>
-                            <a href="pages/telecomunicaciones.html#servicios"
-                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 flex items-center"
-                                role="menuitem">
-                                <svg class="w-4 h-4 mr-3 text-purple-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
-                                    </path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium">Servicios</div>
-                                    <div class="text-xs text-gray-500">Soluciones especializadas</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Dropdown Soluciones -->
-                    <div class="relative dropdown">
-                        <button class="text-gray-700 hover:text-blue-600 flex items-center" aria-expanded="false"
-                            aria-haspopup="true" aria-controls="soluciones-dropdown">
-                            Soluciones
-                            <svg class="w-4 h-4 ml-1 transition-transform duration-200" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div id="soluciones-dropdown"
-                            class="dropdown-content absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg py-2 z-10"
-                            role="menu">
-                            <a href="pages/soluciones.html#networking"
-                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 flex items-center"
-                                role="menuitem">
-                                <svg class="w-4 h-4 mr-3 text-blue-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
-                                    </path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium">Networking</div>
-                                    <div class="text-xs text-gray-500">Redes empresariales</div>
-                                </div>
-                            </a>
-                            <a href="pages/soluciones.html#seguridad"
-                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 flex items-center"
-                                role="menuitem">
-                                <svg class="w-4 h-4 mr-3 text-red-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
-                                    </path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium">Seguridad</div>
-                                    <div class="text-xs text-gray-500">Protección integral</div>
-                                </div>
-                            </a>
-                            <a href="pages/soluciones.html#casos-uso"
-                                class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 flex items-center"
-                                role="menuitem">
-                                <svg class="w-4 h-4 mr-3 text-green-500" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                                <div>
-                                    <div class="font-medium">Casos de Uso</div>
-                                    <div class="text-xs text-gray-500">Ejemplos reales</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <a href="pages/about.html" class="text-gray-700 hover:text-blue-600">Acerca de</a>
-                    <a href="pages/contact.html" class="text-gray-700 hover:text-blue-600">Contacto</a>
-                </div>
-
-                <!-- Mobile menu button -->
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden">
-                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Inicio</a>
-                    <a href="pages/telecomunicaciones.html"
-                        class="block px-3 py-2 text-gray-700 hover:text-blue-600">Telecomunicaciones</a>
-                    <a href="pages/soluciones.html"
-                        class="block px-3 py-2 text-gray-700 hover:text-blue-600">Soluciones</a>
-                    <a href="pages/about.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Acerca de</a>
-                    <a href="pages/contact.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Contacto</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar Component Container -->
+    <div id="navbar-container"></div>
 
     <!-- Hero Section -->
     <section class="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-indigo-700">
@@ -180,11 +24,11 @@
                 networking y seguridad para empresas que buscan innovar y crecer en el mundo digital.
             </p>
             <div class="space-x-4">
-                <a href="pages/contact.html"
+                <a href="/contact.html"
                     class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                     Solicitar Cotización
                 </a>
-                <a href="pages/telecomunicaciones.html"
+                <a href="/telecomunicaciones.html"
                     class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
                     Ver Servicios
                 </a>
@@ -208,8 +52,8 @@
                     <h3 class="text-xl font-semibold mb-2">Telecomunicaciones</h3>
                     <p class="text-gray-600">Instalación, mantenimiento y soporte de infraestructura de
                         telecomunicaciones</p>
-                    <a href="pages/telecomunicaciones.html"
-                        class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Saber más →</a>
+                    <a href="/telecomunicaciones.html" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Saber
+                        más →</a>
                 </div>
 
                 <div class="text-center p-6 rounded-lg border hover:shadow-lg transition hover-lift">
@@ -222,7 +66,7 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Soluciones de Networking</h3>
                     <p class="text-gray-600">Diseño e implementación de redes empresariales seguras y escalables</p>
-                    <a href="pages/soluciones.html" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Saber
+                    <a href="/soluciones.html" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Saber
                         más →</a>
                 </div>
 
@@ -236,7 +80,7 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Seguridad Digital</h3>
                     <p class="text-gray-600">Protección integral de su infraestructura tecnológica</p>
-                    <a href="pages/soluciones.html#seguridad"
+                    <a href="/soluciones.html#seguridad"
                         class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Saber más →</a>
                 </div>
             </div>
@@ -300,7 +144,7 @@
             <h2 class="text-3xl font-bold text-white mb-4">¿Listo para conectar su empresa?</h2>
             <p class="text-xl text-blue-100 mb-8">Contáctenos hoy mismo para una consulta gratuita</p>
             <div class="space-x-4">
-                <a href="pages/contact.html"
+                <a href="/contact.html"
                     class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                     Solicitar Consulta
                 </a>
@@ -312,70 +156,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">R&CNetworks</h3>
-                    <p class="text-gray-400">Soluciones integrales de telecomunicaciones para conectar el futuro digital
-                        de su empresa.</p>
-                    <div class="flex space-x-4 mt-4">
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Telecomunicaciones</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="pages/telecomunicaciones.html#instalacion" class="hover:text-white">Instalación</a>
-                        </li>
-                        <li><a href="pages/telecomunicaciones.html#soporte" class="hover:text-white">Soporte Técnico</a>
-                        </li>
-                        <li><a href="pages/telecomunicaciones.html#servicios" class="hover:text-white">Servicios</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Soluciones</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="pages/soluciones.html#networking" class="hover:text-white">Networking</a></li>
-                        <li><a href="pages/soluciones.html#seguridad" class="hover:text-white">Seguridad</a></li>
-                        <li><a href="pages/soluciones.html#casos-uso" class="hover:text-white">Casos de Uso</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Contacto</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>Email: info@R&Cnetworks.com</li>
-                        <li>Teléfono: +503 1234-5678</li>
-                        <li>San Salvador, El Salvador</li>
-                        <li>Horario: Lun-Vie 8:00-18:00</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 R&CNetworks. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Component Container -->
+    <div id="footer-container"></div>
 
+    <!-- Load component system first -->
+    <script src="./js/components.js"></script>
+    <!-- Then load any page-specific scripts -->
     <script src="./js/main.js"></script>
 </body>
 

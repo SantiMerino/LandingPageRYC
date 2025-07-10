@@ -5,35 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de - R&CNetworks</title>
-    <link href="../styles/main.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="../index.html" class="text-xl font-bold text-blue-600">R&CNetworks</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html" class="text-gray-700 hover:text-blue-600">Inicio</a>
-                    <a href="telecomunicaciones.html" class="text-gray-700 hover:text-blue-600">Telecomunicaciones</a>
-                    <a href="soluciones.html" class="text-gray-700 hover:text-blue-600">Soluciones</a>
-                    <a href="about.html" class="text-blue-600 font-semibold">Acerca de</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contacto</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Navbar Component Container -->
+    <div id="navbar-container"></div>
 
     <!-- Hero Section -->
     <section class="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-indigo-700">
@@ -292,11 +269,11 @@
             <h2 class="text-3xl font-bold text-white mb-4">¿Listo para trabajar con nosotros?</h2>
             <p class="text-xl text-blue-100 mb-8">Únase a las empresas que ya confían en R&CNetworks</p>
             <div class="space-x-4">
-                <a href="contact.html"
+                <a href="/contact.html"
                     class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                     Contactar Ahora
                 </a>
-                <a href="telecomunicaciones.html"
+                <a href="/telecomunicaciones.html"
                     class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
                     Ver Servicios
                 </a>
@@ -304,47 +281,13 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">R&CNetworks</h3>
-                    <p class="text-gray-400">Soluciones integrales de telecomunicaciones para conectar el futuro digital
-                        de su empresa.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Telecomunicaciones</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="telecomunicaciones.html#instalacion" class="hover:text-white">Instalación</a></li>
-                        <li><a href="telecomunicaciones.html#soporte" class="hover:text-white">Soporte Técnico</a></li>
-                        <li><a href="telecomunicaciones.html#servicios" class="hover:text-white">Servicios</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Soluciones</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="soluciones.html#networking" class="hover:text-white">Networking</a></li>
-                        <li><a href="soluciones.html#seguridad" class="hover:text-white">Seguridad</a></li>
-                        <li><a href="soluciones.html#casos-uso" class="hover:text-white">Casos de Uso</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Contacto</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>Email: info@R&Cnetworks.com</li>
-                        <li>Teléfono: +503 1234-5678</li>
-                        <li>San Salvador, El Salvador</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 R&CNetworks. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Component Container -->
+    <div id="footer-container"></div>
 
-    <script src="../js/main.js"></script>
+    <!-- Load component system first -->
+    <script src="js/components.js"></script>
+    <!-- Then load any page-specific scripts -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
