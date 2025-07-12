@@ -8,9 +8,8 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
     rollupOptions: {
-      input: resolve(__dirname, "src/templates/index.html"),
+      input: resolve(__dirname, "src/index.html"),
     },
-    copyPublicDir: true,
   },
   server: {
     port: 5000,
