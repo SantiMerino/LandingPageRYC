@@ -10,12 +10,12 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: "src/templates/index.html",
-        about: "src/templates/about.html",
-        contact: "src/templates/contact.html",
-        services: "src/templates/services.html",
-        solutions: "src/templates/solutions.html",
-        telecommunications: "src/templates/telecommunications.html",
+        main: "templates/index.html",
+        about: "templates/about.html",
+        contact: "templates/contact.html",
+        services: "templates/services.html",
+        solutions: "templates/solutions.html",
+        telecommunications: "templates/telecommunications.html",
       },
     },
     // Copiar archivos PHP al directorio de salida
