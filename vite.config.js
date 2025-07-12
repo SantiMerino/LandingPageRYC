@@ -10,24 +10,21 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: "templates/index.html",
-        about: "templates/about.html",
-        contact: "templates/contact.html",
-        services: "templates/services.html",
-        solutions: "templates/solutions.html",
-        telecommunications: "templates/telecommunications.html",
+        main: resolve(__dirname, "src/templates/index.html"),
+        about: resolve(__dirname, "src/templates/about.html"),
+        contact: resolve(__dirname, "src/templates/contact.html"),
+        services: resolve(__dirname, "src/templates/services.html"),
+        solutions: resolve(__dirname, "src/templates/solutions.html"),
+        telecommunications: resolve(__dirname, "src/templates/telecommunications.html"),
       },
     },
-    // Copiar archivos PHP al directorio de salida
     copyPublicDir: true,
   },
   server: {
     port: 5000,
-    // Configurar para servir archivos PHP en desarrollo
     fs: {
       allow: [".."],
     },
   },
-  // Configurar para que copie los archivos PHP
   publicDir: "../public",
 });
