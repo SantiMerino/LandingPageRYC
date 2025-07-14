@@ -30,12 +30,8 @@ class ComponentLoader {
     }
 
     try {
-      // Determine the correct path based on current page location
-      const currentPath = window.location.pathname;
-      const isInPages = currentPath.includes("/pages/");
-      const basePath = isInPages ? "../" : "./";
-
-      const componentPath = `${basePath}components/${componentName}.html`;
+      // All pages are now in root directory, so use relative paths
+      const componentPath = `components/${componentName}.html`;
 
       const response = await fetch(componentPath);
 
@@ -46,9 +42,6 @@ class ComponentLoader {
       }
 
       let html = await response.text();
-
-      // Adjust paths in the component HTML based on current location
-      html = this.adjustPaths(html, isInPages);
 
       // Insert the component HTML
       targetElement.innerHTML = html;
@@ -71,32 +64,6 @@ class ComponentLoader {
       console.error(`Error loading component ${componentName}:`, error);
       targetElement.innerHTML = `<div class="text-red-500 p-4">Error loading ${componentName} component</div>`;
     }
-  }
-
-  /**
-   * Adjust paths in component HTML based on current page location
-   * @param {string} html - The component HTML
-   * @param {boolean} isInPages - Whether we're in the pages directory
-   * @returns {string} - Adjusted HTML
-   */
-  adjustPaths(html, isInPages) {
-    if (isInPages) {
-      // If we're in pages directory, adjust paths to go up one level
-      html = html.replace(/href="pages\//g, 'href="../pages/');
-      html = html.replace(/href="index\.html"/g, 'href="../index.html"');
-      html = html.replace(/href="\.\/components\//g, 'href="../components/');
-      html = html.replace(/href="\.\/js\//g, 'href="../js/');
-      html = html.replace(/href="\.\/styles\//g, 'href="../styles/');
-    } else {
-      // If we're in root directory, ensure paths are correct
-      html = html.replace(/href="\.\.\/pages\//g, 'href="pages/');
-      html = html.replace(/href="\.\.\/index\.html"/g, 'href="index.html"');
-      html = html.replace(/href="\.\.\/components\//g, 'href="./components/');
-      html = html.replace(/href="\.\.\/js\//g, 'href="./js/');
-      html = html.replace(/href="\.\.\/styles\//g, 'href="./styles/');
-    }
-
-    return html;
   }
 
   /**
@@ -236,6 +203,7 @@ class ComponentLoader {
         if (
           currentPath.endsWith(href) ||
           (currentPath === "/" && href === "index.html") ||
+          (currentPath.endsWith("/") && href === "index.html") ||
           currentPath.includes(href.replace(".html", ""))
         ) {
           link.classList.add("text-blue-600", "font-semibold");
@@ -310,17 +278,16 @@ window.ComponentLoader = new ComponentLoader();
 
 // Auto-load components when DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("components/navbar.html", "navbar-container");
-  loadComponent("components/footer.html", "footer-container");
-});
+  // Load navbar if container exists
+  if (document.getElementById("navbar-container")) {
+    window.ComponentLoader.loadComponent("navbar", "#navbar-container");
+  }
 
-function loadComponent(path, containerId) {
-  fetch(path)
-    .then((res) => res.text())
-    .then((html) => {
-      document.getElementById(containerId).innerHTML = html;
-    });
-}
+  // Load footer if container exists
+  if (document.getElementById("footer-container")) {
+    window.ComponentLoader.loadComponent("footer", "#footer-container");
+  }
+});
 
 // Export for module usage
 if (typeof module !== "undefined" && module.exports) {

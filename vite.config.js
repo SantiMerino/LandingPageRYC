@@ -8,11 +8,18 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
     rollupOptions: {
-      input: resolve(__dirname, "src/index.html"),
+      input: {
+        index: resolve(__dirname, "index.html"),
+        acercade: resolve(__dirname, "about.html"),
+        contacto: resolve(__dirname, "contact.html"),
+        soluciones: resolve(__dirname, "solutions.html"),
+        telecomunicaciones: resolve(__dirname, "telecomunications.html"),
+      },
     },
   },
   server: {
     port: 5000,
   },
   publicDir: "public",
+  assetsInclude: ["**/*.js"],
 });
